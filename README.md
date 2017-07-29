@@ -1,8 +1,8 @@
-# rtmp-monitoring-system
+# rtmp-monitoring-system   
 H264Dec is an Android player client.   
 includetarget is the RTMP server and encoder.   
-testeverthing is an Linux player client.   
-
+testeverthing is a Linux player client.   
+      
 源码说明      
 注明：此源码运行与ubuntu 15.04 32位版本的pc机上，初次运行可能需要先行安装基本的运行库。    
 
