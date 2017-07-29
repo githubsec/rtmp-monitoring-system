@@ -1,12 +1,13 @@
 # rtmp-monitoring-system
-H264Dec is an Android player client.
-includetarget is the RTMP server and encoder.
-testeverthing is an Linux player client.
+H264Dec is an Android player client.   
+includetarget is the RTMP server and encoder.   
+testeverthing is an Linux player client.   
 
 源码说明
-注明：此源码运行与ubuntu 15.04 32位版本的pc机上，初次运行可能需要先行安装基本的运行库。
+注明：此源码运行与ubuntu 15.04 32位版本的pc机上，初次运行可能需要先行安装基本的运行库。    
+
 一、源码结构
-分为三个部分：
+分为三个部分：   
 1.	根文件夹
 根文件夹中的c和cpp文件为自己编写，其中rtmpserver.cpp中包含main函数，负责程序的启动，server包含一些main函数需要使用到的函数的实现；camera.cpp文件包含数据的初始化，v4l2接口的实现，h264编码的实现，目标跟踪的实现；contorl函数负责调用camera文件中的函数，实现各项功能message函数是一套响应操作，工程中没有使用；newcamera.cpp以前的测试文件，未使用；send264.cpp负责将h264文件封装为flv格式，通过rtmp协议进行发送；test.cpp调试时使用thread.c是Linux下多线程需要使用。
 2.	Lib文件夹
