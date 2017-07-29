@@ -1,0 +1,17 @@
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:orientation="vertical" 
+	android:layout_height="fill_parent" android:layout_gravity="center_horizontal">	
+	    <com.example.h264dec.display.GL2JNIView 
+	    	android:layout_gravity="center_vertical|center_horizontal" 
+	    	android:id="@+id/surfaceOutputView" 
+	    	android:layout_height="fill_parent" 
+	    	android:layout_width="fill_parent"/>
+	    <Button
+        android:id="@+id/button_start"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" 
+        android:text="Save" />
+</RelativeLayout >

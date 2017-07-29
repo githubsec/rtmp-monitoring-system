@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical|center_horizontal" android:background="#444444">
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:gravity="center_horizontal|center" android:textStyle="bold" android:padding="4px" android:background="#444444" android:textSize="9pt" android:text="@string/headerH264ToYuv" android:textColor="#ffff00" android:id="@+id/decoderHeader"/>
+
+<LinearLayout android:layout_height="wrap_content" android:id="@+id/LinearLayoutEncode" android:orientation="vertical" android:layout_width="match_parent" android:background="#090909">
+</LinearLayout><LinearLayout android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="match_parent" android:id="@+id/LinearLayoutDecode" android:background="#040404">
+<TextView android:text="[Input File]" android:layout_height="wrap_content" android:id="@+id/tvInputFile" android:layout_width="fill_parent" android:padding="4px" android:textSize="9pt" android:textColor="@android:color/white"></TextView>
+<TextView android:text="[Output File]" android:layout_height="wrap_content" android:id="@+id/tvOutputFile" android:layout_width="fill_parent" android:padding="4px" android:textSize="9pt" android:textColor="@android:color/white"></TextView>
+<LinearLayout android:id="@+id/LinearLayoutEncoderStuff" android:layout_height="wrap_content" android:layout_width="fill_parent">
+<TextView android:layout_height="wrap_content" android:padding="5px" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_weight="1" android:textColor="#ddddff" android:textStyle="normal" android:typeface="monospace" android:layout_marginLeft="4px" android:id="@+id/tvStatus" android:text="Idle." android:textSize="9pt"></TextView>
+</LinearLayout>
+<LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <Button android:padding="12px" android:layout_width="wrap_content" android:clickable="true" android:layout_gravity="center_vertical|center_horizontal" android:layout_height="wrap_content" android:minWidth="120px" android:textSize="10pt" android:layout_weight="1" android:id="@+id/buttonDecode" android:text="@string/decodeFile"></Button>
+    <Button android:text="@string/openYuv" android:padding="12px" android:layout_width="wrap_content" android:clickable="true" android:layout_gravity="center_vertical|center_horizontal" android:layout_height="wrap_content" android:minWidth="120px" android:textSize="10pt" android:id="@+id/buttonOpenYuv" android:layout_weight="1"></Button>
+</LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_height="fill_parent" 
+  android:layout_width="fill_parent"
+   android:gravity="center_horizontal" 
+   android:orientation="vertical">
+   
+ <TextView
+        android:id="@+id/text_label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/input_url"
+        android:layout_below="@+id/input_url"
+        android:text="RTMP URL" />
+
+    <EditText
+        android:id="@+id/output_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_label2"
+        android:layout_below="@+id/text_label2"
+        android:ems="200" 
+        android:inputType="textUri"
+        android:text="rtmp://192.168.1.109:1935/live/"
+        android:textColor="#ff8c00"
+        />
+
+    <Button
+        android:id="@+id/button_start"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/output_url"
+        android:layout_below="@+id/output_url"
+        android:text="Play" />
+    
+
+</LinearLayout>

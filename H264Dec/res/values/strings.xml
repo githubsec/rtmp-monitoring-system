@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RTMPPlayer</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+  <string name="openYuv">Open YUV File</string>
+    <string name="openRgb">Open RGB File</string>
+    
+    <string name="headerH264ToYuv">h.264 to YUV Decoder</string>    
+    <string name="headerH264ToRgb">h.264 to RGB Decoder</string>
+    
+    <string name="decodeFile">Decode File</string>
+    <string name="rgbViewer">RGB Viewer</string>
+</resources>
