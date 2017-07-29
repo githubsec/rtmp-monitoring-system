@@ -8,12 +8,12 @@ testeverthing is an Linux player client.
 
 一、源码结构   
 分为三个部分：       
-1.	根文件夹    
+1.根文件夹    
 根文件夹中的c和cpp文件为自己编写，其中rtmpserver.cpp中包含main函数，负责程序的启动，server包含一些main函数需要使用到的函数的实现；camera.cpp文件包含数据的初始化，v4l2接口的实现，h264编码的实现，目标跟踪的实现；contorl函数负责调用camera文件中的函数，实现各项功能message函数是一套响应操作，工程中没有使用；newcamera.cpp以前的测试文件，未使用；send264.cpp负责将h264文件封装为flv格式，通过rtmp协议进行发送；test.cpp调试时使用thread.c是Linux下多线程需要使用。    
-2.	Lib文件夹     
+2.Lib文件夹     
 Lib文件夹中包含几大开源库编译为支持linux-x86架构的动态库，不同的平台需要重新编译。    
 其中包括ffmpeg开源库、librtmp开源库和opencv开源库的动态库。    
-3.	include文件夹   
+3.include文件夹   
 include文件夹包含了工程的头文件，其中，camera.h、control.h、rtmp.h、send264.h、server.h为自己编写的主要头文件。   
 
 二、运行流程及函数调用图   
